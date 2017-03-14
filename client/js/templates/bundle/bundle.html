@@ -1,0 +1,37 @@
+<div class="container-fluid">
+      <div ng-include="'js/templates/sidebar/sidebar.html'"></div>
+
+<div class="col-md-offset-2 col-md-3">
+      <div class="form-inline" id="mainForm">
+
+              <div >
+
+                  <label>Enter bundle Ids:</label>
+
+                        <div style="border: 1px; solid blue; background-color:rgb(255, 189, 149); padding:10px">
+                          <div>
+                              <input type="radio" ng-model="radioSelected" ng-value='"file"' name="inputtypeRadio" value="file" checked> Upload File
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              <input id="file" type="file" style="display: inline;width:200px;">
+
+                         </div>
+                         <br>
+                         <div>
+                              <input type="radio" ng-model="radioSelected" ng-value='"manual"' name="inputtypeRadio" value="id"> Enter bundle ID
+                              &nbsp;
+                              <input type="text" ng-model="bundleIds" placeholder="Comma separated ids"/>
+                        </div>
+                      </div>
+             </div>
+             <br>
+             <div style="text-align:center;">
+<!--               <button class="btn btn-primary .btn-lg">Check Input</button>  -->
+               <button ng-click="calculateResult()" class="btn btn-primary .btn-lg">Get bundle details</button>
+             </div>
+
+      </div>
+  </div>
+
+  <div ng-include="'js/templates/bundle/bundle_result.html'" id="resultContainer" class="col-md-6"></div>
+
+</div>

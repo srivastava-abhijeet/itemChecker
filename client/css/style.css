@@ -1,0 +1,102 @@
+.header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #273746;
+}
+#mainForm {
+    background-color: #FBEEE6;
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 10px 10px grey;
+}
+#resultContainer {
+    margin-top: 10px;
+}
+thead th {
+    background-color: #696969;
+    color: white;
+}
+.table-hover tbody tr:hover td {
+    background: #F5F5DC;
+}
+button {
+    margin-left: 10px;
+}
+h4 {
+    display: inline;
+}
+hr {
+    border-color: grey;
+}
+#countmsg {
+    margin-left: 10px;
+}
+button#download {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.table-scroll thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.table-scroll tbody {
+    max-height: 600px;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+    table-layout: fixed;
+}
+.table-scroll tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.table-scroll td {
+    height: 47px; /* needed in order to keep rows from collapsing*/
+}
+
+
+/*Styling for side bar*/
+
+.sidebar {
+    position : absolute;
+
+    left : -200px;;
+    transition : 100ms left;
+    height: 93%;
+    background-color : #273746;
+}
+#navigation-toggle {
+        position : absolute;
+        left : 200px;
+        padding: 5px;
+}
+.show {
+    left : 0;
+}
+.navigation {
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
+.navigation-items a {
+    display : block;
+    background-color : #273746;
+    color : white;
+    line-height : 2em;
+    text-decoration : none;
+    padding : 10px 30px;
+    width : 200px;
+    border-bottom: 1px solid #ddd;
+
+
+}
+
+.navigation-items a:hover {
+    background-color : #2e6da4;
+}
+

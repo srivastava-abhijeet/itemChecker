@@ -1,0 +1,28 @@
+<div id='resultBox' ng-show="processedArray.length>0">
+
+
+    <h4><span id="countmsg" class="label label-success">Total count: {{processedArray.length}}</span></h4>
+    <button class="btn btn-primary .btn-lg" ng-click="downloadFile()" id='download'>Download File</button>
+
+
+    <br><br>
+    <table id="resultList" ng-table="processedArray" class="table table-striped table-hover table-scroll">
+        <thead>
+            <tr>
+                <th>Bundle ID</th>
+                <th>Response Status</th>
+                <th>Bundle Type</th>
+                <th>canAddToCart</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="row in processedArray">
+                <td>{{row.bundleId}}</td>
+                <td>{{row.status}}</td>
+                <td>{{row.bundleType}}</td>
+                <td>{{row.canAddToCart}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
